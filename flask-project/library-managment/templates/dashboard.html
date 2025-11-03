@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>welcome to Dashboard</h1>
+
+<section class="text-gray-600 body-font">
+  <div class="flex flex-wrap -m-4 text-center">
+  <div class="p-4 sm:w-1/4 w-1/2">
+    <p class="leading-relaxed">Total Students</p>
+    <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">{{total_students}}</h2>
+  </div>
+  <div class="p-4 sm:w-1/4 w-1/2">
+    <p class="leading-relaxed">Males</p>
+    <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">{{male_count}}</h2>
+  </div>
+  <div class="p-4 sm:w-1/4 w-1/2">
+    <p class="leading-relaxed">Females</p>
+    <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">{{female_count}}</h2>
+  </div>
+</div>
+
+</section>
+
+{% endblock content %}
